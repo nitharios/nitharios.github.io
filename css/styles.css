@@ -30,13 +30,16 @@ header.masthead>.overlay {
     }
 
 .name {
-  font-size: 7rem;
-}
-
-.skills {
   font-size: 4rem;
 }
 
+.skills {
+  font-size: 3rem;
+}
+
+/*.row, .col {
+  border: 1px solid black;
+}*/
 
 @media (min-width: 992px) {
   header.masthead>.overlay {
