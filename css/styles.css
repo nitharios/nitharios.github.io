@@ -5,7 +5,7 @@
  */
 
 body {
-  padding-top: 54px;
+  padding-top: 55px;
 }
 
 @media (min-width: 992px) {
@@ -20,7 +20,7 @@ header.masthead {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-bottom: 4rem;
+  padding-bottom: 10rem;
 }
 
 header.masthead>.overlay {
