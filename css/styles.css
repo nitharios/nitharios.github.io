@@ -14,17 +14,23 @@ body {
   }
 }
 
+.content {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
 header.masthead {
   /*background: url('https://unsplash.it/1900/1080?image=304') no-repeat center center scroll;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-bottom: 10rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 header.masthead>.overlay {
-    padding: 5rem 0;
+    padding: 10rem 0;
     text-align: center;
     background: #FFFFFF;
     }
@@ -41,8 +47,8 @@ header.masthead>.overlay {
   border: 1px solid black;
 }*/
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
   header.masthead>.overlay {
     padding: 10rem 0;
-  }
+  }*/
 }
