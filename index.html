@@ -1,17 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <!-- tells IE to use the latest rendering engine -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!-- set the page width to the size of the device and set the zoom level to 1 -->
-  <meta name="viewport" content="width = device-width, initial-scale= 1">
-  
-  <title>Nitharios</title>
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-</head>
-<body>
-  Hello World!
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <!-- tells IE to use the latest rendering engine -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- set the page width to the size of the device and set the zoom level to 1 -->
+    <meta name="viewport" content="width = device-width, initial-scale= 1">
+    
+    <title>Nitharios</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <!-- Hello World! -->
+    <!-- Navigation -->  
+    <!-- defines how you're going to use the navbar -->
+    <!-- fixed-top will always keep the navbar on top -->
+    <!-- size declaration will affect when navbar will change content -->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Nitharios</a>
+        <!-- creates a button that appears when the expand-size minimum is reach -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <!-- active item will be highlighted -->
+            <li class="nav-item active">
+              <a href="#page-top" class="nav-link">Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead" id="page-top">
+      <div class="container overlay">
+        <!-- <img class="img-fluid" src="" alt=""> -->
+        <div class="intro-text">
+          <span class="name">Welcome!</span>
+          <!-- this is a divider -->
+          <hr class="star-light">
+          <!-- <span class="skills">Fullstack Developer</span> -->
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Body -->
+    <div data-spy="scroll" data-target="#navbar" data-offset="0">
+      <hr class="star-light" id="about">
+      <!-- <div class="row justify-content-center"> -->
+        <div class="col-10 col-md-8 col-lg-6 container content">
+          <h4>About</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi ipsum provident voluptatibus minus placeat, qui obcaecati tempora laborum ut expedita? Illum, sapiente corrupti nemo ullam voluptates voluptatem, ratione exercitationem omnis?</p>
+        </div>
+      <!-- </div> -->
+      <hr class="star-light" id="projects">
+      <!-- <div class="row justify-content-center"> -->
+        <div class="col-10 col-md-8 col-lg-6 container content">
+          <h4 id="projects">Projects</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis excepturi et ut odit dolorum reiciendis minima non. Eligendi ducimus ipsam quam libero nobis aliquam hic vitae, culpa explicabo quos laborum.</p>
+        </div>
+      <!-- </div> -->
+      <hr class="star-light" id="contact">
+      <!-- <div class="row justify-content-center"> -->
+
+        <div class="col-10 col-md-8 col-lg-6 container content">
+          <h4>Contact</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, porro, ad, accusamus ab officia dolorum voluptatum eius molestiae tenetur maiores illum laboriosam hic atque dolore. Maiores eligendi veritatis aspernatur illum.</p>
+        </div>
+
+      <!-- </div> -->
+    </div>  
+
+    <!-- Footer -->
+    <footer class="py-2 bg-dark">
+      <!-- <div class="row"> -->
+        <div class="col">
+          <p class="m-0 text-center text-white">2017</p>
+        </div>
+      <!-- </div> -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </body>
 </html>
