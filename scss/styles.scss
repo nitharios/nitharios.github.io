@@ -1,9 +1,13 @@
 body {
   padding-top: 4rem;
+
+  @media (max-width:992px) {
+    padding-top: 6rem;
+  }
 }
 
 div {
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .row {
@@ -16,10 +20,9 @@ div {
 }
 
 .content {
-
-
-  @media (min-width: 992px) {
-    // padding-top: 80px;
+  @media (max-width: 992px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
