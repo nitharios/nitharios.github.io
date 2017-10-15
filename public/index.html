@@ -8,11 +8,63 @@
   <meta name="viewport" content="width = device-width, initial-scale= 1">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/styles.css">
   <title>Nathaniel Niosco</title>
 </head>
-<body>
-  
+<body> 
+  <!-- Navigation -->  
+  <!-- defines how you're going to use the navbar -->
+  <!-- fixed-top will always keep the navbar on top -->
+  <!-- size declaration will affect when navbar will change content -->
+  <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">Nathaniel Niosco</a>
+      <!-- creates a button that appears when the expand-size minimum is reach -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <!-- active item will be highlighted -->
+          <li class="nav-item active">
+            <a href="#page-top" class="nav-link">Home <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main div -->
+  <div class="container">
+    <div class="content col-fluid">
+      <h4>About</h4>
+    </div>
+    <div class="content col-fluid">
+      <h4>Projects</h4>
+    </div>
+    <div class="content col-fluid">
+      <h4>Content</h4>
+    </div>
+
+  </div>
+    <!-- Footer -->
+    <footer class="py-2 bg-light">
+      <!-- <div class="row"> -->
+        <div class="col">
+          <p class="m-0 text-center">2017</p>
+        </div>
+      <!-- </div> -->
+    </footer>
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
