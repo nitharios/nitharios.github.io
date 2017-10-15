@@ -42,6 +42,22 @@ header.masthead>.overlay {
   font-size: 3rem;
 }
 
+.bgimg {
+  background-image: url('../img/default-placeholder.png');
+  /*display: inline-block;*/
+  /*position: center;*/
+/*  width: 200px;
+  height: 200px;*/
+}
+
+.row {
+  width: 100%;
+}
+
+div {
+  border: 1px solid black;
+}
+
 /*.row, .col {
   border: 1px solid black;
 }*/
