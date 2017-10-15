@@ -6,6 +6,10 @@ div {
 
 .row {
   align-items: center; }
+  @media (min-width: 992px) {
+    .row {
+      padding-top: 4rem;
+      padding-bottom: 4rem; } }
 
 .img {
   background-image: url("../img/default-placeholder.png");
