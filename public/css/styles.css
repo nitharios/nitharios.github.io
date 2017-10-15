@@ -4,6 +4,14 @@ body {
 div {
   border: 1px solid black; }
 
+.row {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+
+@media (min-width: 992px) {
+  .content {
+    padding-top: 80px; } }
+
 .img {
   background-image: url("../img/default-placeholder.png");
   background-color: #000000;
