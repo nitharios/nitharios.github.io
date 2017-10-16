@@ -10,6 +10,15 @@ div {
   // border: 1px solid $bg-color;
 }
 
+hr {
+  visibility: hidden;
+
+  @media(min-width: 992px) {
+    width: 50%;
+    visibility: visible;
+  }
+}
+
 body {
   @include end-margin(8rem, 0rem);
 }
