@@ -14,7 +14,6 @@ body {
     padding-top: 4rem;
     padding-bottom: 4rem; }
   .row .img {
-    background-image: url("../img/default-placeholder.png");
     background-color: #FFFFFF;
     display: block;
     margin: 0 auto;
