@@ -1,37 +1,51 @@
-body {
-  padding-top: 4rem;
+$bg-color: #1974D2;
+$font-color: #FFFFFF;
 
-  @media (max-width:992px) {
-    padding-top: 6rem;
-  }
+@mixin end-padding($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
 }
 
 div {
-  // border: 1px solid black;
+  // border: 1px solid $bg-color;
+}
+
+body {
+  @include end-padding(8rem, 0rem);
+}
+
+.main {
+  margin-bottom: 5rem;
 }
 
 .row {
-  @media (min-width: 992px) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
+  @include end-padding(0rem, 0rem);
 
   align-items: center;
-}
+  
+  .content {
+    @include end-padding(4rem, 4rem);
+  }
 
-.content {
-  @media (max-width: 992px) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  .img {
+    background-image: url('../img/default-placeholder.png');
+    background-color: $font-color;
+
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
   }
 }
 
-.img {
-  background-image: url('../img/default-placeholder.png');
-  background-color: #000000;
+#projects {
+  @media(min-width: 992px) {
+    @include end-padding(6rem, 6rem);
+  }
+  @include end-padding(1rem, 1rem);
+}
 
-  display: block;
-  margin: 0 auto;
-  width: 300px;
-  height: 300px;
+.dash {
+  background-color: $bg-color;
+  color: $font-color;
 }
