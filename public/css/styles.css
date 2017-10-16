@@ -17,6 +17,9 @@ body {
   margin-top: 0rem;
   margin-bottom: 0rem;
   align-items: center; }
+  @media (max-width: 992px) {
+    .row {
+      padding-top: 4rem; } }
   .row .content {
     margin-top: 4rem;
     margin-bottom: 4rem; }
@@ -32,7 +35,8 @@ body {
     max-width: 300px;
     max-height: 300px; }
   .row .profile {
-    border-radius: 50%; }
+    width: 75%;
+    border-radius: 25px; }
 
 @media (min-width: 992px) {
   #about {
@@ -40,6 +44,8 @@ body {
     margin-bottom: 3rem; } }
 
 #projects {
+  background-color: #1974D2;
+  color: #FFFFFF;
   margin-top: 1rem;
   margin-bottom: 1rem; }
   @media (min-width: 992px) {
@@ -55,3 +61,15 @@ body {
 .dash {
   background-color: #1974D2;
   color: #FFFFFF; }
+
+@media (min-width: 992px) {
+  .shadow-left {
+    -moz-box-shadow: -5px 5px 5px 5px #CCC;
+    -webkit-box-shadow: -5px 5px 5px 5px #CCC;
+    box-shadow: -5px 5px 5px 5px #CCC; } }
+
+@media (min-width: 992px) {
+  .shadow-right {
+    -moz-box-shadow: 5px 5px 5px 5px #CCC;
+    -webkit-box-shadow: 5px 5px 5px 5px #CCC;
+    box-shadow: 5px 5px 5px 5px #CCC; } }

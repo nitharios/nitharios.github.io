@@ -1,9 +1,20 @@
 $bg-color: #1974D2;
-$font-color: #FFFFFF;
+$primary-color: #FFFFFF;
+$secondary-color: #000000;
+$accent-color: #CCC;
+$lg-size: 992px;
 
-@mixin end-margin($margin-top, $margin-bottom) {
+@mixin vertical-margin($margin-top, $margin-bottom) {
     margin-top: $margin-top;
     margin-bottom: $margin-bottom;
+}
+
+@mixin shadow-prop($horizontal, $vertical, $blur, $spread, $color) {
+  @media(min-width: $lg-size) {
+  -moz-box-shadow:    $horizontal $vertical $blur $spread $color;
+  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
+  box-shadow:         $horizontal $vertical $blur $spread $color;
+  }
 }
 
 div {
@@ -13,29 +24,32 @@ div {
 hr {
   visibility: hidden;
 
-  @media(min-width: 992px) {
+  @media(min-width: $lg-size) {
     width: 50%;
     visibility: visible;
   }
 }
 
 body {
-  @include end-margin(8rem, 0rem);
+  @include vertical-margin(8rem, 0rem);
 }
 
 .main {
-  @media(min-width: 992px) {
+  @media(min-width: $lg-size) {
     margin-bottom: 6rem;
   }
 }
 
 .row {
-  @include end-margin(0rem, 0rem);
+  @include vertical-margin(0rem, 0rem);
+  @media(max-width: $lg-size) {
+    padding-top: 4rem;
+  }
 
   align-items: center;
   
   .content {
-    @include end-margin(4rem, 4rem);
+    @include vertical-margin(4rem, 4rem);
 
     @media (min-width:996px) {
       margin-left: 2rem;
@@ -44,41 +58,50 @@ body {
   }
 
   .img {
-    background-color: $font-color;
-
+    background-color: $primary-color;
     border: 0;
-
-
     display: block;
     margin: 0 auto;
     max-width: 300px;
     max-height: 300px;
   }
     .profile {
-      border-radius: 50%;
+      width: 75%;
+      // align-: left;
+      border-radius: 25px;
     }
 }
 
 #about {
-  @media(min-width: 992px) {
-    @include end-margin(0rem, 3rem);
+  @media(min-width: $lg-size) {
+    @include vertical-margin(0rem, 3rem);
   }
 }
 
 #projects {
-  @media(min-width: 992px) {
-    @include end-margin(3rem, 3rem);
+  background-color: $bg-color;
+  color: $primary-color;
+  @media(min-width: $lg-size) {
+    @include vertical-margin(3rem, 3rem);
   }
-  @include end-margin(1rem, 1rem);
+  @include vertical-margin(1rem, 1rem);
 }
 
 #connect {
-  @media(min-width: 992px) {
-    @include end-margin(3rem, 0rem);
+  @media(min-width: $lg-size) {
+    @include vertical-margin(3rem, 0rem);
   }
 }
 
 .dash {
   background-color: $bg-color;
-  color: $font-color;
+  color: $primary-color;
+}
+
+.shadow-left {
+  @include shadow-prop(-5px, 5px, 5px, 5px, $accent-color);
+}
+
+.shadow-right {
+  @include shadow-prop(5px, 5px, 5px, 5px, $accent-color);
 }
