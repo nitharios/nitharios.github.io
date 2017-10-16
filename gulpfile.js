@@ -4,7 +4,7 @@ var gulp = require('gulp')
 
     browserSync.init({
       server: {
-        baseDir: ".."
+        baseDir: "./"
       }
     });
 
@@ -16,6 +16,7 @@ var gulp = require('gulp')
 
     gulp.task('watch', function (){
       gulp.watch('./scss/**/*', ['scss'])
+      gulp.watch('*.html').on('change', browserSync.reload);
       gulp.watch('./public/**/*').on('change', browserSync.reload);
     })
 
