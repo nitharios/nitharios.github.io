@@ -1,0 +1,33 @@
+body {
+  padding-top: 8rem;
+  padding-bottom: 0rem; }
+
+@media (min-width: 992px) {
+  .main {
+    margin-bottom: 6rem; } }
+
+.row {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  align-items: center; }
+  .row .content {
+    padding-top: 4rem;
+    padding-bottom: 4rem; }
+  .row .img {
+    background-color: #FFFFFF;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px; }
+
+#projects {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+  @media (min-width: 992px) {
+    #projects {
+      padding-top: 6rem;
+      padding-bottom: 6rem; } }
+
+.dash {
+  background-color: #1974D2;
+  color: #FFFFFF; }

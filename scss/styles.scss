@@ -1,0 +1,52 @@
+$bg-color: #1974D2;
+$font-color: #FFFFFF;
+
+@mixin end-padding($padding-top, $padding-bottom) {
+    padding-top: $padding-top;
+    padding-bottom: $padding-bottom;
+}
+
+div {
+  // border: 1px solid $bg-color;
+}
+
+body {
+  @include end-padding(8rem, 0rem);
+}
+
+.main {
+  @media(min-width: 992px) {
+    margin-bottom: 6rem;
+  }
+}
+
+.row {
+  @include end-padding(0rem, 0rem);
+
+  align-items: center;
+  
+  .content {
+    @include end-padding(4rem, 4rem);
+  }
+
+  .img {
+    background-color: $font-color;
+
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+#projects {
+  @media(min-width: 992px) {
+    @include end-padding(6rem, 6rem);
+  }
+  @include end-padding(1rem, 1rem);
+}
+
+.dash {
+  background-color: $bg-color;
+  color: $font-color;
+}
