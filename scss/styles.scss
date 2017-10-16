@@ -1,9 +1,9 @@
 $bg-color: #1974D2;
 $font-color: #FFFFFF;
 
-@mixin end-padding($padding-top, $padding-bottom) {
-    padding-top: $padding-top;
-    padding-bottom: $padding-bottom;
+@mixin end-margin($margin-top, $margin-bottom) {
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
 }
 
 div {
@@ -11,7 +11,7 @@ div {
 }
 
 body {
-  @include end-padding(8rem, 0rem);
+  @include end-margin(8rem, 0rem);
 }
 
 .main {
@@ -21,12 +21,17 @@ body {
 }
 
 .row {
-  @include end-padding(0rem, 0rem);
+  @include end-margin(0rem, 0rem);
 
   align-items: center;
   
   .content {
-    @include end-padding(4rem, 4rem);
+    @include end-margin(4rem, 4rem);
+
+    @media (min-width:996px) {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
   }
 
   .img {
@@ -34,18 +39,34 @@ body {
 
     border: 0;
 
+
     display: block;
     margin: 0 auto;
     max-width: 300px;
     max-height: 300px;
   }
+    .profile {
+      border-radius: 50%;
+    }
+}
+
+#about {
+  @media(min-width: 992px) {
+    @include end-margin(0rem, 3rem);
+  }
 }
 
 #projects {
   @media(min-width: 992px) {
-    @include end-padding(6rem, 6rem);
+    @include end-margin(3rem, 3rem);
   }
-  @include end-padding(1rem, 1rem);
+  @include end-margin(1rem, 1rem);
+}
+
+#connect {
+  @media(min-width: 992px) {
+    @include end-margin(3rem, 0rem);
+  }
 }
 
 .dash {

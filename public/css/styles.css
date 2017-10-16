@@ -1,18 +1,22 @@
 body {
-  padding-top: 8rem;
-  padding-bottom: 0rem; }
+  margin-top: 8rem;
+  margin-bottom: 0rem; }
 
 @media (min-width: 992px) {
   .main {
     margin-bottom: 6rem; } }
 
 .row {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
   align-items: center; }
   .row .content {
-    padding-top: 4rem;
-    padding-bottom: 4rem; }
+    margin-top: 4rem;
+    margin-bottom: 4rem; }
+    @media (min-width: 996px) {
+      .row .content {
+        margin-left: 2rem;
+        margin-right: 2rem; } }
   .row .img {
     background-color: #FFFFFF;
     border: 0;
@@ -20,14 +24,26 @@ body {
     margin: 0 auto;
     max-width: 300px;
     max-height: 300px; }
+  .row .profile {
+    border-radius: 50%; }
+
+@media (min-width: 992px) {
+  #about {
+    margin-top: 0rem;
+    margin-bottom: 3rem; } }
 
 #projects {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
   @media (min-width: 992px) {
     #projects {
-      padding-top: 6rem;
-      padding-bottom: 6rem; } }
+      margin-top: 3rem;
+      margin-bottom: 3rem; } }
+
+@media (min-width: 992px) {
+  #connect {
+    margin-top: 3rem;
+    margin-bottom: 0rem; } }
 
 .dash {
   background-color: #1974D2;
