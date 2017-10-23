@@ -1,6 +1,13 @@
 $bg-color: #1974D2;
 $font-color: #FFFFFF;
 
+$primary-color: #003366;
+$secondary-color: #FFCC66;
+$accent-color: #336699;
+$text-color-one: #FFFFFF;
+$text-color-two: #000000;
+
+
 @mixin end-margin($margin-top, $margin-bottom) {
     margin-top: $margin-top;
     margin-bottom: $margin-bottom;
