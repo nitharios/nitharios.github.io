@@ -37,7 +37,7 @@ body {
 }
 
 div, span {
-  // border: 1px solid $color-two;
+  border: 1px solid $color-two;
 }
 
 #navbar {
@@ -47,6 +47,7 @@ div, span {
   position: fixed;
   background-color: $accent-color;
   color: $color-one;
+  font-weight: bold;
 
   .nav-content {
     @include flex-style(row wrap, center);
@@ -66,7 +67,7 @@ div, span {
     @include flex-style(row wrap, center)
     background-color: $primary-color;
     width: 100%;
-    height: 700px;
+    height: 800px;
   
     #masthead {
       align-self: center;
@@ -76,6 +77,7 @@ div, span {
         width: auto;
         margin-bottom: 50px;
         font-size: 65px;
+        font-weight: bold;
       }
 
       #main-detail {
@@ -84,9 +86,25 @@ div, span {
         font-size: 40px;
       }
 
-      .detail {
+      span {
         margin: 10px 20px;
         font-size: 30px;
+        font-style: italic;
+      }
+    }
+  }
+
+  #content {
+    width: 100%;
+
+    .content-item {
+      @include flex-style(row wrap, center);
+      align-items: center;
+      width: 100%;
+      height: 500px;
+
+      div {
+        font-size: 25px;
       }
     }
   }
