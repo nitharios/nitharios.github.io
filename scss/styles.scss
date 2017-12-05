@@ -24,16 +24,13 @@ $contrast-color: #DCDCDC;
 }
 
 html {
-  @include box-style(border-box); 
+  @include box-style(border-box);
 }
 
 *, *:before, *:after {
   @include box-style(inherit)
+  font-family: "Montserrat";
 }
-
-// div {
-//   border: 1px solid black;
-// }
 
 body {
   margin: 0;
@@ -43,18 +40,14 @@ body {
 
 #main-content {
   @include flex-style(row wrap, center);
-  max-width: 500px;
+  max-width: 750px;
   margin: 0 auto;
-}
-
-.info {
-  padding: 15px 15px 0px 15px;
 }
 
 #about {
   width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 5px solid $primary-color;
+  padding-bottom: 20px;
+  border-bottom: 5px solid $accent-color;
 }
 
 #header, .sub-header {
@@ -68,11 +61,6 @@ body {
   font-size: 25px;
 }
 
-#title {
-  margin-bottom: 10px;
-  font-size: 30px;
-}
-
 .title, .sub-title, .sub-title>a {
   font-family: "Source Sans Pro";
   font-weight: bold;
@@ -81,17 +69,38 @@ body {
   color: $secondary-color;
 }
 
+#title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
 .sub-title {
   margin-top: 10px;
+  margin-bottom: 3px;
 }
 
 .date {
   font-style: italic;
-  margin-top: 2px;
   margin-bottom: 10px;
 }
 
 .info {
-  padding-bottom: 25px;
+  width: 100%;
+  padding: 15px 15px 25px 15px;
   border-bottom: 1px solid $contrast-color;
+
+  .details {
+    margin-bottom: 20px;
+  }
+
+  #skills {
+    @include flex-style(row nowrap, space-around);
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    div {
+      margin: 5px;
+    }
+  }
 }
