@@ -1,107 +1,119 @@
-$bg-color: #1974D2;
-$primary-color: #FFFFFF;
-$secondary-color: #000000;
-$accent-color: #CCC;
-$lg-size: 992px;
+// https://www.colorcombos.com/color-schemes/99/ColorCombo99.html
+$primary-color: #003366;
+$secondary-color: #FF6600;
+$accent-color: #336699;
+$bg-color: #FFFFFF;
+$contrast-color: #DCDCDC;
 
-@mixin vertical-margin($margin-top, $margin-bottom) {
-    margin-top: $margin-top;
-    margin-bottom: $margin-bottom;
+// mixins
+@mixin flex-style($flow, $justify) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-flow: $flow;
+  justify-content: $justify;
 }
 
-@mixin shadow-prop($horizontal, $vertical, $blur, $spread, $color) {
-  @media(min-width: $lg-size) {
-  -moz-box-shadow:    $horizontal $vertical $blur $spread $color;
-  -webkit-box-shadow: $horizontal $vertical $blur $spread $color;
-  box-shadow:         $horizontal $vertical $blur $spread $color;
-  }
+@mixin box-style($style) {
+  -webkit-box-sizing: $style;
+  -moz-box-sizing: $style;
+  box-sizing: $style; 
 }
 
-div {
-  // border: 1px solid $bg-color;
+html {
+  @include box-style(border-box);
 }
 
-hr {
-  visibility: hidden;
-
-  @media(min-width: $lg-size) {
-    width: 50%;
-    visibility: visible;
-  }
+*, *:before, *:after {
+  @include box-style(inherit)
+  font-family: "Montserrat";
 }
 
 body {
-  @include vertical-margin(8rem, 0rem);
+  margin: 0;
+  margin-top: 100px;
+  font-family: sans-serif;
 }
 
-.main {
-  @media(min-width: $lg-size) {
-    margin-bottom: 6rem;
-  }
-}
-
-.row {
-  @include vertical-margin(0rem, 0rem);
-  @media(max-width: $lg-size) {
-    padding-top: 4rem;
-  }
-
-  align-items: center;
-  
-  .content {
-    @include vertical-margin(4rem, 4rem);
-
-    @media (min-width:996px) {
-      margin-left: 2rem;
-      margin-right: 2rem;
-    }
-  }
-
-  .img {
-    background-color: $primary-color;
-    border: 0;
-    display: block;
-    margin: 0 auto;
-    max-width: 300px;
-    max-height: 300px;
-  }
-    .profile {
-      width: 75%;
-      // align-: left;
-      border-radius: 25px;
-    }
+#main-content {
+  @include flex-style(row wrap, center);
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 #about {
-  @media(min-width: $lg-size) {
-    @include vertical-margin(0rem, 3rem);
+  @include flex-style(row nowrap, space-between);
+  align-items: center;
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 5px solid $accent-color;
+
+  #profile-pic {
+    background-image: url('../assets/small-profile-pic.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-right: 20px;
   }
 }
 
-#projects {
-  background-color: $bg-color;
-  color: $primary-color;
-  @media(min-width: $lg-size) {
-    @include vertical-margin(3rem, 3rem);
+#header, .sub-header {
+  font-family: "Rhoza One";
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.sub-header {
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.title, .sub-title, .sub-title>a {
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+#title {
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.sub-title {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
+.date {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.info {
+  width: 100%;
+  padding: 15px 15px 25px 15px;
+  border-bottom: 1px solid $contrast-color;
+
+  .details {
+    margin-bottom: 20px;
   }
-  @include vertical-margin(1rem, 1rem);
-}
 
-#connect {
-  @media(min-width: $lg-size) {
-    @include vertical-margin(3rem, 0rem);
+  #skills {
+    @include flex-style(row nowrap, space-around);
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+
+    div {
+      margin: 5px;
+    }
   }
-}
-
-.dash {
-  background-color: $bg-color;
-  color: $primary-color;
-}
-
-.shadow-left {
-  @include shadow-prop(-5px, 5px, 5px, 5px, $accent-color);
-}
-
-.shadow-right {
-  @include shadow-prop(5px, 5px, 5px, 5px, $accent-color);
 }
