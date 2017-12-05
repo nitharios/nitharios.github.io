@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 75px;
   font-family: sans-serif; }
 
 #main-content {
@@ -31,21 +31,22 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 5px solid #336699; }
-  #about #profile-pic {
-    background-image: url("../assets/small-profile-pic.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 115%;
-    width: 125px;
-    height: 125px;
-    border-radius: 50%;
-    margin-right: 20px; }
+  @media (min-width: 600px) {
+    #about #profile-pic {
+      background-image: url("../assets/small-profile-pic.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 115%;
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      margin-right: 20px; } }
 
 #header, .sub-header {
   font-family: "Rhoza One";
