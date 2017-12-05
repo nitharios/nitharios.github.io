@@ -45,9 +45,22 @@ body {
 }
 
 #about {
+  @include flex-style(row nowrap, space-between);
+  align-items: center;
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 5px solid $accent-color;
+
+  #profile-pic {
+    background-image: url('../assets/small-profile-pic.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 115%;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
 }
 
 #header, .sub-header {
