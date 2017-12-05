@@ -2,51 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hi, my name is Nathan</title>
   <!-- tells IE to use the latest rendering engine -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- set the page width to the size of the device and set the zoom level to 1 -->
   <meta name="viewport" content="width = device-width, initial-scale= 1">
-  <link rel="stylesheet" href="/public/css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Prompt|Rhoza One|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./public/css/styles.css" media="screen" />
+  <title>Nathaniel Niosco</title>
 </head>
 <body>
-  <!-- navbar -->
-  <div id="navbar">
-    <span class="nav-content">
-      <span class="nav-item">Home</span>
-    </span>
-    <span class="nav-content">
-      <span class="nav-item">About</span>
-      <span class="nav-item">Projects</span>
-      <span class="nav-item">Connect</span>
-    </span>
-  </div>
-  <!-- main wrapper for entire page -->
-  <div id="page-wrapper">
-    <!-- top of page -->
-    <div id="masthead-bg">    
-      <div id="masthead">
-        <div id="title">Fullstack Web Engineer</div>
-        <div id="main-detail">Javascript</div>
-        <span>Node</span>
-        <span>Express</span>
-        <span>Angular</span>
-        <span>React</span>
-      </div>
-    </div>
-    <!-- main content -->
-    <div id="content">
-      <div class="content-item" id="about">
-        <div>About</div>
-      </div>
-      <div class="content-item" id="projects">
-        <div>Projects</div>
-      </div>
-      <div class="content-item" id="connect">
-        <div>Connect</div>
-      </div>
-    </div>
+  <!-- NAV ELEMENTS -->
+  <div id="nav-bar">
   </div>
 
+  <!-- main content -->
+  <div id="main-content">
+    <div id="about" class="info">
+      <div id="header">Nathaniel Niosco</div>
+      <div id="title">Full Stack Web Developer</div>
+      <div class="details-container">
+        n.niosco@gmail.com
+        <a href="https://github.com/nitharios">GitHub</a>
+        <a href="https://linkedin.com/in/nathaniel-niosco">LinkedIn</a>
+      </div>
+    </div>
+    <div class="info">
+      <div class="sub-header">Projects</div>
+      <div class="details-container">
+        <div class="sub-title">
+          <a href="http://devvycho.com">Devvy Cho - Smart Bot</a>
+        </div>
+        <div class="date">November 2017</div>
+        <div class="details">
+          Designed and implemented a Smart Bot for use in Slack and browsers. The bot accepts a user query, passes the message through a natural language processor (Wit.ai), and displays database information based on the contents of the query.<br><br>
+
+          I taught myself how to use Wit.ai and integrated it with Slack's API through Botkit. I used a similar integration through Node and React in the browser implementation.<br><br>
+
+          Technology:<br>
+          Node, Wit.ai, Botkit, Slack, React 
+        </div>
+        <div class="sub-title">
+          <a href="http://c19.nitharios.consumemorestuff.com">.jnkr - Content Management System</a>
+        </div>
+        <div class="date">November 2017</div>
+        <div class="details">
+          Designed and built a content management system using Node and React. Users are able to register on the site and post pictures of items they wish to sell or trade.<br><br>
+
+          This project was built with a team. I was responsible for developing the server and parts of the React front-end.<br><br>
+
+          Technology:<br>
+          Node, Express, React, Passport, Redis
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="sub-header">Education</div>
+      <div class="details-container">
+        <div class="sub-title">DevLeague</div>
+        <div class="date">August 2017 - December 2017</div>
+        <div class="details">
+          A 940-hour intensive course on learning the tools required to operate as a full-stack web developer. The course was taught primarily in Javascript. Learned OOP, design patterns, test-driven development, relational and non-relational databases, server and API handling, Angular, React, Redux, and deployment of web apps.
+        </div>
+        <div class="sub-title">University of Nebraska - Lincoln</div>
+        <div class="details">Master of Science in Education Resarch</div>
+        <div class="date">August 2014 - August 2016</div>
+        <div class="details">Bachelor of Science in Forensic Science</div>
+        <div class="date">August 2010 - May 2014</div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="sub-header">Key Skills</div>
+      <div class="details">
+        <span>JavaScript</span>
+        <span>ES6</span>
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>SQL</span>
+        <span>API Integration</span>
+        <span>Responsive Design</span>
+        <span>NodeJS</span>
+        <span>ReactJS</span>
+        <span>Redux</span>
+        <span>AngularJS</span>
+        <span>ExpressJS</span>
+        <span>Postgres</span>
+        <span>Git</span>
+        <span>MochaJS/ChaiJS</span>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
