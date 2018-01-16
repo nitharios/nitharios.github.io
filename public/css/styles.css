@@ -63,6 +63,8 @@ body {
   font-size: 20px;
   text-decoration: none;
   color: #FF6600; }
+  .title a:hover, .sub-title a:hover, .sub-title > a a:hover {
+    color: #B31B1B; }
 
 #title {
   margin-bottom: 10px;

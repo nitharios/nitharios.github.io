@@ -4,6 +4,7 @@ $secondary-color: #FF6600; // orange
 $accent-color: #336699; // light-gray
 $bg-color: #FFFFFF; // white
 $contrast-color: #DCDCDC; // gainsboro
+$link-hover: #B31B1B;
 
 // breakpoints
 $md-width: 600px;
@@ -79,16 +80,16 @@ body {
   font-size: 25px;
 }
 
-.title, .sub-title {
+.title, .sub-title, .sub-title>a {
   font-family: "Source Sans Pro";
   font-weight: bold;
   font-size: 20px;
   text-decoration: none;
-  color: $primary-color;
+  color: $secondary-color;
 
-  //   a:hover {
-  //   color: $primary-color;
-  // }
+    a:hover {
+    color: $link-hover;
+  }
 }
 
 #title {
