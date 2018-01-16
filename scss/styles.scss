@@ -1,9 +1,9 @@
 // https://www.colorcombos.com/color-schemes/99/ColorCombo99.html
-$primary-color: #003366;
-$secondary-color: #FF6600;
-$accent-color: #336699;
-$bg-color: #FFFFFF;
-$contrast-color: #DCDCDC;
+$primary-color: #003366; // midnight blue
+$secondary-color: #FF6600; // orange
+$accent-color: #336699; // light-gray
+$bg-color: #FFFFFF; // white
+$contrast-color: #DCDCDC; // gainsboro
 
 // breakpoints
 $md-width: 600px;
@@ -39,6 +39,10 @@ body {
   margin: 0;
   margin-top: 75px;
   font-family: sans-serif;
+}
+
+a:hover {
+  color: $primary-color;
 }
 
 #main-content {
