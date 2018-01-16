@@ -41,10 +41,6 @@ body {
   font-family: sans-serif;
 }
 
-a:hover {
-  color: $primary-color;
-}
-
 #main-content {
   @include flex-style(row wrap, center);
   max-width: 750px;
@@ -89,6 +85,10 @@ a:hover {
   font-size: 20px;
   text-decoration: none;
   color: $secondary-color;
+
+    a:hover {
+    color: $primary-color;
+  }
 }
 
 #title {
