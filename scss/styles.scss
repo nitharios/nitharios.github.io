@@ -89,6 +89,7 @@ body {
 
     a:hover {
     color: $link-hover;
+    text-decoration: underline;
   }
 }
 
@@ -124,6 +125,23 @@ body {
 
     div {
       margin: 5px;
+    }
+  }
+}
+
+.company {
+  margin-bottom: 2px;
+  color: $primary-color;
+  font-weight: bold;
+  text-decoration: none;
+
+  a {
+    color: $primary-color;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

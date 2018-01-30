@@ -64,7 +64,8 @@ body {
   text-decoration: none;
   color: #FF6600; }
   .title a:hover, .sub-title a:hover, .sub-title > a a:hover {
-    color: #B31B1B; }
+    color: #B31B1B;
+    text-decoration: underline; }
 
 #title {
   margin-bottom: 10px;
@@ -97,3 +98,15 @@ body {
     margin-bottom: 100px; }
     .info #skills div {
       margin: 5px; }
+
+.company {
+  margin-bottom: 2px;
+  color: #003366;
+  font-weight: bold;
+  text-decoration: none; }
+  .company a {
+    color: #003366;
+    font-weight: bold;
+    text-decoration: none; }
+    .company a:hover {
+      text-decoration: underline; }
